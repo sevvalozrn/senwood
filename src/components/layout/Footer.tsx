@@ -1,7 +1,6 @@
 
 import {
   ArrowUpRight,
-  ArrowRight,
   MapPin,
   Phone,
   Mail,
