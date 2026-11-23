@@ -74,7 +74,7 @@ export default function About() {
 
           <div className="about-image-wrap">
             <img
-              src="/images/about-workshop.jpg"
+              src="public/images/about-workshop.jpg"
               alt="ŞENWOOD ahşap işçiliği"
               className="about-image"
             />

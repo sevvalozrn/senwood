@@ -17,14 +17,14 @@ const services = [
     description:
       'Yaşam alanlarına özel tasarlanan masa, sehpa, raf ve mobilyalarla doğal ahşabın sıcaklığını iç mekânlara taşıyoruz.',
     images: [
-      '/images/services/interior-1.jpg',
-      '/images/services/interior-2.jpg',
-      '/images/services/interior-3.jpg',
-      '/images/services/interior-4.jpg',
-      '/images/services/interior-5.jpg',
-      '/images/services/interior-6.jpg',
-      '/images/services/interior-7.jpg',
-      '/images/services/interior-8.jpg',
+      'public/images/services/interior-1.jpg',
+      'public/images/services/interior-2.jpg',
+      'public/images/services/interior-3.jpg',
+      'public/images/services/interior-4.jpg',
+      'public/images/services/interior-5.jpg',
+      'public/images/services/interior-6.jpg',
+      'public/images/services/interior-7.jpg',
+      'public/images/services/interior-8.jpg',
     ],
   },
   {
@@ -34,13 +34,13 @@ const services = [
     description:
       'Bahçeler ve açık alanlar için kamelya, sundurma, oturma grupları ve özel ahşap yapılar üretiyoruz.',
     images: [
-      '/images/services/exterior-1.jpg',
-      '/images/services/exterior-2.jpg',
-      '/images/services/exterior-3.jpg',
-      '/images/services/exterior-4.jpg',
-      '/images/services/exterior-5.jpg',
-      '/images/services/exterior-6.jpg',
-      '/images/services/exterior-7.jpg',
+      'public/images/services/exterior-1.jpg',
+      'public/images/services/exterior-2.jpg',
+      'public/images/services/exterior-3.jpg',
+      'public/images/services/exterior-4.jpg',
+      'public/images/services/exterior-5.jpg',
+      'public/images/services/exterior-6.jpg',
+      'public/images/services/exterior-7.jpg',
     ],
   },
   {
@@ -50,9 +50,9 @@ const services = [
     description:
       'Ahşabın doğal dokusunu epoksinin özgün görünümüyle birleştirerek karakter sahibi tasarımlar ortaya çıkarıyoruz.',
     images: [
-      '/images/services/epoxy-1.jpg',
-      '/images/services/epoxy-2.jpg',
-      '/images/services/epoxy-3.jpg',
+      'public/images/services/epoxy-1.jpg',
+      'public/images/services/epoxy-2.jpg',
+      'public/images/services/epoxy-3.jpg',
     ],
   },
   {
@@ -62,10 +62,10 @@ const services = [
     description:
       'Yapının mimarisine ve kullanım ihtiyacına uygun ahşap çatı ve yapısal uygulamalar gerçekleştiriyoruz.',
     images: [
-      '/images/services/roof-1.jpg',
-      '/images/services/roof-2.jpg',
-      '/images/services/roof-3.jpg',
-      '/images/services/roof-4.jpg',
+      'public/images/services/roof-1.jpg',
+      'public/images/services/roof-2.jpg',
+      'public/images/services/roof-3.jpg',
+      'public/images/services/roof-4.jpg',
     ],
   },
 ]
@@ -267,7 +267,7 @@ export default function Services() {
       {/* FULLSCREEN IMAGE MODAL */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#17130F]/95 backdrop-blur-md p-4 md:p-8"
+          className="fixed inset-0 z-9999 flex items-center justify-center bg-[#17130F]/95 backdrop-blur-md p-4 md:p-8"
           onClick={closeModal}
           role="presentation"
         >
