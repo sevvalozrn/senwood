@@ -9,24 +9,25 @@ import LoadingScreen from './components/ui/LoadingScreen'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 
+// Pathname'i base path'ten bağımsız normalize et
+function getNormalizedPath() {
+  const raw = window.location.pathname
+  // Trailing slash'ı kaldır, küçük harfe çevir
+  return raw.replace(/\/$/, '') || '/'
+}
+
 function App() {
   const [loaded, setLoaded] = useState(false)
-  const [pathname, setPathname] = useState(window.location.pathname)
+  const [pathname, setPathname] = useState(getNormalizedPath)
 
   useEffect(() => {
-    const handleNavigation = () => {
-      setPathname(window.location.pathname)
-    }
-
+    const handleNavigation = () => setPathname(getNormalizedPath())
     window.addEventListener('popstate', handleNavigation)
-
-    return () => {
-      window.removeEventListener('popstate', handleNavigation)
-    }
+    return () => window.removeEventListener('popstate', handleNavigation)
   }, [])
 
-
-  if (pathname === '/contact') {
+  // /contact veya /senwood/contact
+  if (pathname === '/contact' || pathname.endsWith('/contact')) {
     return (
       <>
         <Header />
@@ -36,25 +37,23 @@ function App() {
     )
   }
 
-  if (pathname !== '/') {
-    return <NotFound />
+  // Anasayfa: / veya /senwood
+  if (pathname === '/' || pathname === '/senwood') {
+    return (
+      <>
+        {!loaded && <LoadingScreen onDone={() => setLoaded(true)} />}
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Services />
+        </main>
+        <Footer />
+      </>
+    )
   }
 
-  return (
-    <>
-      {!loaded && <LoadingScreen onDone={() => setLoaded(true)} />}
-
-      <Header />
-
-      <main>
-        <Hero />
-        <About />
-        <Services />
-      </main>
-
-      <Footer />
-    </>
-  )
+  return <NotFound />
 }
 
 export default App
