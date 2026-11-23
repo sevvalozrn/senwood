@@ -14,10 +14,10 @@ const socialLinks = [
 ]
 
 const quickLinks = [
-  { label: 'Ana Sayfa', href: '/#home' },
-  { label: 'Hakkımızda', href: '/#about' },
-  { label: 'Hizmetlerimiz', href: '/#services' },
-  { label: 'İletişim', href: '/contact' },
+  { label: 'Ana Sayfa', href: '/senwood/#home' },
+  { label: 'Hakkımızda', href: '/senwood/#about' },
+  { label: 'Hizmetlerimiz', href: '/senwood/#services' },
+  { label: 'İletişim', href: '/senwood/contact' },
 ]
 
 export default function Footer() {

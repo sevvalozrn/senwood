@@ -4,10 +4,10 @@ import { ArrowUpRight, Menu, X } from 'lucide-react'
 import Container from './Container'
 
 const navigation = [
-  { label: 'Hakkımızda', href: '/#about' },
-  { label: 'Ürünler', href: '/#services' },
-  { label: 'Özel Üretim', href: '#contact' },
-  { label: 'İletişim', href: '/contact' },
+  { label: 'Hakkımızda', href: '/senwood/#about' },
+  { label: 'Ürünler', href: '/senwood/#services' },
+  { label: 'Özel Üretim', href: '/senwood/contact' },
+  { label: 'İletişim', href: '/senwood/contact' },
 ]
 
 export default function Header() {

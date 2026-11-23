@@ -9,6 +9,7 @@ import {
 } from 'lucide-react'
 import Container from '../components/layout/Container'
 
+
 const services = [
   {
     number: '01',
@@ -17,14 +18,14 @@ const services = [
     description:
       'Yaşam alanlarına özel tasarlanan masa, sehpa, raf ve mobilyalarla doğal ahşabın sıcaklığını iç mekânlara taşıyoruz.',
     images: [
-      'public/images/services/interior-1.jpg',
-      'public/images/services/interior-2.jpg',
-      'public/images/services/interior-3.jpg',
-      'public/images/services/interior-4.jpg',
-      'public/images/services/interior-5.jpg',
-      'public/images/services/interior-6.jpg',
-      'public/images/services/interior-7.jpg',
-      'public/images/services/interior-8.jpg',
+      `${import.meta.env.BASE_URL}images/services/interior-1.jpg`,
+      `${import.meta.env.BASE_URL}images/services/interior-2.jpg`,
+      `${import.meta.env.BASE_URL}images/services/interior-3.jpg`,
+      `${import.meta.env.BASE_URL}images/services/interior-4.jpg`,
+      `${import.meta.env.BASE_URL}images/services/interior-5.jpg`,
+      `${import.meta.env.BASE_URL}images/services/interior-6.jpg`,
+      `${import.meta.env.BASE_URL}images/services/interior-7.jpg`,
+      `${import.meta.env.BASE_URL}images/services/interior-8.jpg`,
     ],
   },
   {
@@ -34,13 +35,13 @@ const services = [
     description:
       'Bahçeler ve açık alanlar için kamelya, sundurma, oturma grupları ve özel ahşap yapılar üretiyoruz.',
     images: [
-      'public/images/services/exterior-1.jpg',
-      'public/images/services/exterior-2.jpg',
-      'public/images/services/exterior-3.jpg',
-      'public/images/services/exterior-4.jpg',
-      'public/images/services/exterior-5.jpg',
-      'public/images/services/exterior-6.jpg',
-      'public/images/services/exterior-7.jpg',
+      `${import.meta.env.BASE_URL}images/services/exterior-1.jpg`,
+      `${import.meta.env.BASE_URL}images/services/exterior-2.jpg`,
+      `${import.meta.env.BASE_URL}images/services/exterior-3.jpg`,
+      `${import.meta.env.BASE_URL}images/services/exterior-4.jpg`,
+      `${import.meta.env.BASE_URL}images/services/exterior-5.jpg`,
+      `${import.meta.env.BASE_URL}images/services/exterior-6.jpg`,
+      `${import.meta.env.BASE_URL}images/services/exterior-7.jpg`,
     ],
   },
   {
@@ -50,9 +51,9 @@ const services = [
     description:
       'Ahşabın doğal dokusunu epoksinin özgün görünümüyle birleştirerek karakter sahibi tasarımlar ortaya çıkarıyoruz.',
     images: [
-      'public/images/services/epoxy-1.jpg',
-      'public/images/services/epoxy-2.jpg',
-      'public/images/services/epoxy-3.jpg',
+      `${import.meta.env.BASE_URL}images/services/epoxy-1.jpg`,
+      `${import.meta.env.BASE_URL}images/services/epoxy-2.jpg`,
+      `${import.meta.env.BASE_URL}images/services/epoxy-3.jpg`,
     ],
   },
   {
@@ -62,13 +63,14 @@ const services = [
     description:
       'Yapının mimarisine ve kullanım ihtiyacına uygun ahşap çatı ve yapısal uygulamalar gerçekleştiriyoruz.',
     images: [
-      'public/images/services/roof-1.jpg',
-      'public/images/services/roof-2.jpg',
-      'public/images/services/roof-3.jpg',
-      'public/images/services/roof-4.jpg',
+      `${import.meta.env.BASE_URL}images/services/roof-1.jpg`,
+      `${import.meta.env.BASE_URL}images/services/roof-2.jpg`,
+      `${import.meta.env.BASE_URL}images/services/roof-3.jpg`,
+      `${import.meta.env.BASE_URL}images/services/roof-4.jpg`,
     ],
   },
 ]
+
 
 type SelectedImage = {
   serviceIndex: number
