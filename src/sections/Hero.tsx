@@ -14,7 +14,7 @@ export default function Hero() {
       id="home"
       className="hero-section"
       style={{
-        backgroundImage: "url('/images/hero-background.jpg')",
+        backgroundImage: "url('public/images/hero-background.jpg')",
       }}
     >
       <div className="hero-overlay" />
