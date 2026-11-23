@@ -14,14 +14,13 @@ export default function Hero() {
       id="home"
       className="hero-section"
       style={{
-        backgroundImage: "url('public/images/hero-background.jpg')",
+        backgroundImage: `url('${import.meta.env.BASE_URL}images/hero-background.jpg')`,
       }}
     >
       <div className="hero-overlay" />
 
       <Container>
         <div className="hero-content">
-
           <h1 className="hero-title">
             Ahşabın doğasından,
             <br />
@@ -61,7 +60,6 @@ export default function Hero() {
               </div>
             ))}
           </div>
-
         </div>
       </Container>
     </section>
